@@ -2,11 +2,11 @@
 
 ![Job Applier Bot](image.jpeg)
 
-Welcome to the Job Applier Bot project! This bot is designed to automate job applications across various job platforms. It supports integration with LinkedIn, Indeed, and other job boards.
+Welcome to the Job Applier Bot project! This bot is designed to automate job applications across various job platforms. It supports integration with LinkedIn, Indeed, Glassdoor, Welcome to the Jungle, and other job boards.
 
 ## Features
 
-- **Automated Job Applications**: Apply to jobs on LinkedIn, Indeed, and more.
+- **Automated Job Applications**: Apply to jobs on LinkedIn, Indeed, Glassdoor, Welcome to the Jungle, and more.
 - **Web Scraping**: Extract job listings from multiple sources.
 - **AI Assistance**: Uses AI models for handling job-related queries.
 - **Database Integration**: Keeps track of job applications and offers.
@@ -46,7 +46,7 @@ To get started with the Job Applier Bot, follow these steps:
       ```bash
       cp config.sample.py config.py
       ```
-    - Edit `config.py` to add your LinkedIn, Indeed, and other job board credentials.
+    - Edit `config.py` to add your LinkedIn, Indeed, Glassdoor, and Welcome to the Jungle credentials.
 
 5. **Run the Bot**:
     ```bash
@@ -60,6 +60,15 @@ The bot's configuration is managed through the `config.py` file. You can set var
 - **API Keys**: For accessing job boards and AI models.
 - **Job Board URLs**: URLs for scraping job listings.
 - **Database Settings**: Connection details for MongoDB and PostgreSQL.
+
+## Bots Supported
+
+The Job Applier Bot integrates with the following job boards:
+
+- **Indeed**: Scrapes job listings and applies based on your configured criteria.
+- **Glassdoor**: Extracts job postings and allows automated applications.
+- **LinkedIn**: Automates job applications and profile updates.
+- **Welcome to the Jungle**: Retrieves and applies to job listings from this platform.
 
 ## Usage
 
