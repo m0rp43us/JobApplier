@@ -1,0 +1,36 @@
+language: python
+python:
+  - "3.8"
+  - "3.9"
+  - "3.10"
+  - "3.11"
+
+# Set up cache for dependencies to speed up build times
+cache:
+  pip: true
+  directories:
+    - $HOME/.cache/pip
+
+install:
+  # Install dependencies
+  - pip install -r requirements.txt
+  - pip install .
+
+script:
+  # Run tests
+  - pytest
+
+# Notifications
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+
+# Optional: deploy to PyPI if tests pass
+deploy:
+  provider: pypi
+  user: "__token__"
+  password:
+    secure: "<your-encrypted-pypi-token>"
+  on:
+    branch: main

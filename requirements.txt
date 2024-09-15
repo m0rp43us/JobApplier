@@ -1,26 +1,31 @@
-# Selenium and WebDriver manager for browser automation
-selenium==4.14.0
-webdriver-manager==4.11.2
+# FastAPI and related dependencies
+fastapi
+uvicorn[standard]
 
-# Optional: For using specific features of Chrome or other browsers, you may need to install additional packages
-# e.g., chromedriver-autoinstaller for automatic ChromeDriver management
+# PostgreSQL dependencies
+psycopg2-binary
+sqlalchemy
 
-# Utilities for environment configuration and logging
-# Make sure to have your `utils`, `constants`, and `config` modules available in your project
+# For AI helper
+openai  # Assuming you're using OpenAI's GPT models, adjust if using another library
+llama-index  # If you use Ollama or another LLM library, replace or add as necessary
 
-# Database connection and ORM packages (adjust based on your database)
-# Example for SQLite (use appropriate package if using a different database)
-sqlite3
+# For web scraping (if used)
+beautifulsoup4
+requests
 
-# Optional: If you use `requests` or similar libraries for network calls
-# requests==2.31.0
+# For interacting with your web bots (if used)
+selenium
+webdriver-manager
 
-# Optional: For data manipulation and analysis
-# pandas==2.1.1
-# numpy==1.24.3
+# Other utility packages
+pydantic
 
-# To include development dependencies
-# e.g., testing frameworks or linters
-# pytest==7.4.0
-# flake8==6.0.0
-singleton-decorator
+# Optional: For JSON Web Tokens (if using for authentication)
+pyjwt
+
+# Optional: For data analysis and manipulation (if using)
+pandas
+
+# Logging
+loguru
