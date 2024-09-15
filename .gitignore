@@ -1,0 +1,68 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+*.env
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# SQLite database file
+*.sqlite3
+
+# PyCharm project files
+*.iml
+
+# Pytest cache
+.cache/
+
+# Coverage reports
+.coverage
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint
+pylint-report.txt
+pylint-global.txt
+
+# Sphinx documentation
+docs/_build/
+
+# Distribution and packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.pyc
+*.pyo
+*.pyd
