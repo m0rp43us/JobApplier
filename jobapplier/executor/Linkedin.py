@@ -8,10 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
-import utils
-import constants
-import config
-import database_manager
+import SettingsManager
+import DatabaseManager
 
 class Linkedin:
     def __init__(self):
