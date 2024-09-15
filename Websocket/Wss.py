@@ -2,6 +2,8 @@
 import websockets
 import asyncio
 
+from jobapplier.executor.Executor import SearchJobCommand
+
 async def send_command_to_executor(command):
     uri = "ws://executor-server"
     async with websockets.connect(uri) as websocket:
